@@ -14,7 +14,6 @@ setup(
         'pandas4',
         'cython',
         'torch',
-        'fbpca',
         'scikit-learn',
         'tqdm',
         'h5py',
