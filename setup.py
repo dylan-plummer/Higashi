@@ -6,7 +6,7 @@ setup(
     description='Higashi: Multiscale and integrative scHi-C analysis',
     url='https://github.com/ma-compbio/Higashi',
     include_package_data=True,
-    python_requires='>=3.9',
+    python_requires='>=3.7',
     packages=find_packages(),
     install_requires=[
         'numpy,
