@@ -15,7 +15,6 @@ except:
 	except:
 		raise EOFError
 import argparse
-import resource
 from scipy.sparse import csr_matrix
 from scipy.sparse.csr import get_csr_submatrix
 from sklearn.preprocessing import StandardScaler
@@ -448,8 +447,6 @@ class Higashi():
 			
 		create_dir(self.config)
 		warnings.filterwarnings("ignore")
-		rlimit = resource.getrlimit(resource.RLIMIT_NOFILE)
-		resource.setrlimit(resource.RLIMIT_NOFILE, (3600, rlimit[1]))
 		
 		
 	# For processing data: old Process.py
