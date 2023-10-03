@@ -31,6 +31,7 @@ except:
 
 torch.backends.cudnn.benchmark = True
 torch.set_default_dtype(torch.float32)
+neg_num = 0
 
 
 def parse_args():
