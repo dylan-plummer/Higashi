@@ -729,7 +729,7 @@ class Higashi():
 			neg_num = 4
 		else:
 			neg_num = 5
-		
+		print("neg_num:", neg_num)
 		self.batch_size *= (1 + neg_num)
 		print("Node type num", self.num, num_list)
 		start_end_dict = np.concatenate([np.zeros((1, 2)), start_end_dict], axis=0).astype('int')
